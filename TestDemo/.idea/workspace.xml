@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e7dbd21-2d66-4639-8f3a-496de1a1c6bf" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/TestDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/UniappTool.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/components/demo-title.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/components/dynamic-demo-template.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/components/multiple-options-demo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/components/nav-index-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mixin/dynamic_demo_mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mixin/template_page_mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/navigation/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/class/class.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/history/history.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/mine.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/opencv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/recognition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/recognition2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/scan/scan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/student/face-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/student/student.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/xmls/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ecust1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ecust2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ecust3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ecust4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ecust5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/Utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/face-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/opencv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/recognition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/face_landmark_68_model-weights_manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/face_landmark_68_model.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/face_recognition_model-weights_manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/face_recognition_model.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/ssd_mobilenetv1_model-weights_manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/models/ssd_mobilenetv1_model.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/my-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/xmls/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/$t.mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template.h5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-action-sheet/tn-action-sheet.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-avatar-group/tn-avatar-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-avatar/tn-avatar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-badge/tn-badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-button/tn-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-calendar/tn-calendar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-car-keyboard/tn-car-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-cascade-selection/tn-cascade-selection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-checkbox-group/tn-checkbox-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-checkbox/tn-checkbox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-circle-progress/tn-circle-progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-collapse-item/tn-collapse-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-collapse/tn-collapse.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-color-icon/tn-color-icon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-column-notice/tn-column-notice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-count-down/tn-count-down.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-count-scroll/tn-count-scroll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-count-to/tn-count-to.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-cropper/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-cropper/tn-cropper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-custom-swiper-item/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-custom-swiper-item/tn-custom-swiper-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-custom-swiper/tn-custom-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-drag/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-drag/tn-drag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-empty/tn-empty.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-fab/tn-fab.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-form-item/tn-form-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-form/tn-form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-goods-nav/tn-goods-nav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-grid-item/tn-grid-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-grid/tn-grid.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-image-upload-drag/tn-image-upload-drag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-image-upload/tn-image-upload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-index-anchor/tn-index-anchor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-index-list/tn-index-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-input/tn-input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-keyboard/tn-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-landscape/tn-landscape.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-lazy-load/tn-lazy-load.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-line-progress/tn-line-progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-list-cell/tn-list-cell.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-list-view/tn-list-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-load-more/tn-load-more.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-loading/tn-loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-modal/tn-modal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-nav-bar/tn-nav-bar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-notice-bar/tn-notice-bar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-number-box/tn-number-box.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-number-keyboard/tn-number-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-picker/tn-picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-popup/tn-popup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-radio-group/tn-radio-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-radio/tn-radio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-rate/tn-rate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-read-more/tn-read-more.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-row-notice/tn-row-notice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-scroll-list/tn-scroll-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-scroll-view/tn-scroll-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-select/tn-select.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-sign-board/tn-sign-board.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-skeleton/tn-skeleton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-slider/tn-slider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-stack-swiper/index-h5.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-stack-swiper/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-stack-swiper/tn-stack-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-steps/tn-steps.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-sticky/tn-sticky.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-subsection/tn-subsection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-swipe-action-item/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-swipe-action-item/tn-swipe-action-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-swipe-action/tn-swipe-action.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-swiper/tn-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-switch/tn-switch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tabbar/tn-tabbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-table/tn-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tabs-swiper/tn-tabs-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tabs/tn-tabs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tag/tn-tag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-td/tn-td.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-time-line-item/tn-time-line-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-time-line-item/tn-time-line-item.vue_bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-time-line/tn-time-line.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-time-line/tn-time-line.vue_bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tips/tn-tips.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-toast/tn-toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tr/tn-tr.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tree-node/tn-tree-node.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-tree-view/tn-tree-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-verification-code-input/tn-verification-code-input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-verification-code/tn-verification-code.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/components/tn-waterfall/tn-waterfall.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/config/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/config/zIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/css/color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/css/style.h5.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/css/style.mp.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/$parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/colorUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/deepClone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/messageUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/updateCustomBarInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/function/uuid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/mixin/components_color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/mixin/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/mixin/mpShare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/mixin/touch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/async-validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/city.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/emitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/libs/utils/province.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuniao-ui/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/ColorMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/DrawingFunctions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Feature.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/GeometricImageTransformations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Histograms.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/ImageFiltering.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Misc.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Object.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Segmentation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Shape.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ImageProcessing/Subdiv2D.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/ObjectDetection/ObjectDetection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/ColorConversion.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Core.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/CoreArray.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/HalInterface.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Mat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/MatVector.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Moments.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Point.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Range.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Rect.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/RotatedRect.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Scalar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Size.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/TermCriteria.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/core/Utils.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/dnn/dnn.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/opencv.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/opencv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/opencv_imgproc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/text-encoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/video/BackgroundSubtractor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/video/BackgroundSubtractorMOG2.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/video/track.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/js_sdk/wasmBinaryFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/static/app-plus/opencv.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/static/h5/opencv.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/static/mp-toutiao/opencv.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uni_modules/zj-opencv/static/mp-weixin/opencv.wasm.br" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/build/static/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/.automator/app-plus/.automator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappchooselocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniapperror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappes6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappopenlocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniapppicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappquill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappquillimageresize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappscan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappsuccess.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/__uniappview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/app-config-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/app-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/app-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/app-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/static/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/static/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpackage/dist/dev/app-plus/view.umd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/.hbuilderx/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/circlePages/circle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/discoveryPages/edit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/discoveryPages/form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/discoveryPages/order.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/discoveryPages/partner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/components/demo-title.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/components/dynamic-demo-template.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/components/multiple-options-demo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/components/nav-index-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/mixin/dynamic_demo_mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/mixin/template_page_mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/libs/navigation/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/messagePages/chat.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/about.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/avatar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/integral.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/protocol.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/minePages/withdraw.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/circle/circle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/class/class.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/discovery/discovery.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/history/history.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/message/message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/mine/mine.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/pages/student/student.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/set.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/ecust1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/ecust2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/ecust3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/ecust4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/ecust5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/icon/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/icon/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/my-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/static/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/store/$t.mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/template.h5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-action-sheet/tn-action-sheet.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-avatar-group/tn-avatar-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-avatar/tn-avatar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-badge/tn-badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-button/tn-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-calendar/tn-calendar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-car-keyboard/tn-car-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-cascade-selection/tn-cascade-selection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-checkbox-group/tn-checkbox-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-checkbox/tn-checkbox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-circle-progress/tn-circle-progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-collapse-item/tn-collapse-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-collapse/tn-collapse.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-color-icon/tn-color-icon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-column-notice/tn-column-notice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-count-down/tn-count-down.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-count-scroll/tn-count-scroll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-count-to/tn-count-to.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-cropper/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-cropper/tn-cropper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-custom-swiper-item/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-custom-swiper-item/tn-custom-swiper-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-custom-swiper/tn-custom-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-drag/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-drag/tn-drag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-empty/tn-empty.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-fab/tn-fab.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-form-item/tn-form-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-form/tn-form.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-goods-nav/tn-goods-nav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-grid-item/tn-grid-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-grid/tn-grid.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-image-upload-drag/tn-image-upload-drag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-image-upload/tn-image-upload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-index-anchor/tn-index-anchor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-index-list/tn-index-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-input/tn-input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-keyboard/tn-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-landscape/tn-landscape.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-lazy-load/tn-lazy-load.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-line-progress/tn-line-progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-list-cell/tn-list-cell.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-list-view/tn-list-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-load-more/tn-load-more.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-loading/tn-loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-modal/tn-modal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-nav-bar/tn-nav-bar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-notice-bar/tn-notice-bar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-number-box/tn-number-box.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-number-keyboard/tn-number-keyboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-picker/tn-picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-popup/tn-popup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-radio-group/tn-radio-group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-radio/tn-radio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-rate/tn-rate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-read-more/tn-read-more.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-row-notice/tn-row-notice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-scroll-list/tn-scroll-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-scroll-view/tn-scroll-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-select/tn-select.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-sign-board/tn-sign-board.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-skeleton/tn-skeleton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-slider/tn-slider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-stack-swiper/index-h5.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-stack-swiper/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-stack-swiper/tn-stack-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-steps/tn-steps.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-sticky/tn-sticky.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-subsection/tn-subsection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-swipe-action-item/index.wxs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-swipe-action-item/tn-swipe-action-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-swipe-action/tn-swipe-action.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-swiper/tn-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-switch/tn-switch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tabbar/tn-tabbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-table/tn-table.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tabs-swiper/tn-tabs-swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tabs/tn-tabs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tag/tn-tag.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-td/tn-td.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-time-line-item/tn-time-line-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-time-line-item/tn-time-line-item.vue_bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-time-line/tn-time-line.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-time-line/tn-time-line.vue_bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tips/tn-tips.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-toast/tn-toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tr/tn-tr.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tree-node/tn-tree-node.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-tree-view/tn-tree-view.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-verification-code-input/tn-verification-code-input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-verification-code/tn-verification-code.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/components/tn-waterfall/tn-waterfall.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/config/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/config/zIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/css/color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/css/style.h5.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/css/style.mp.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/$parent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/colorUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/deepClone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/messageUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/updateCustomBarInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/function/uuid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/mixin/components_color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/mixin/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/mixin/mpShare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/mixin/touch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/async-validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/city.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/emitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/libs/utils/province.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/tuniao-ui/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/uni.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/.automator/app-plus/.automator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappchooselocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniapperror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappes6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappopenlocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniapppicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappquill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappquillimageresize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappscan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappsuccess.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/__uniappview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/app-config-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/app-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/app-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/app-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/static/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/static/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../人脸识别app前端_uniapp/TestDemo/unpackage/dist/dev/app-plus/view.umd.min.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2avfP7d3px4pFCIt9Z6d6Frpbfi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "21.2.0",
+    "javascript.nodejs.core.library.typings.version": "20.11.0",
+    "last_opened_file_path": "E:/ECUST/软件文档写作/实验/JWMS/jwms-frontend-mobile/TestDemo/static/models",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static\models" />
+      <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static\js" />
+      <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\pages\student" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1e7dbd21-2d66-4639-8f3a-496de1a1c6bf" name="更改" comment="" />
+      <created>1705203946221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705203946221</updated>
+      <workItem from="1705203947271" duration="669000" />
+      <workItem from="1705204671419" duration="33000" />
+      <workItem from="1705204758041" duration="12481000" />
+      <workItem from="1705221959759" duration="2678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
