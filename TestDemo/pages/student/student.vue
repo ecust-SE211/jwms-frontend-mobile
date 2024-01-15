@@ -46,7 +46,6 @@
 </template>
 
 <script>
-	import {uni} from "../../unpackage/dist/dev/app-plus/view.umd.min";
   export default {
 		data() {
 			return {
@@ -87,7 +86,6 @@
     methods: {
       async startVideoStream() {
         if (!this.faceApiLoaded) return;
-
         const video = document.querySelector('video');
         const canvas = document.querySelector('canvas');
         const ctx = canvas.getContext('2d');
@@ -103,23 +101,50 @@
               console.log("An error occurred! " + err);
             });
       },
-
       detectFacesInStream(video, canvas, ctx) {
-        setInterval(() => {
-          ctx.drawImage(video,0,0,canvas.width, canvas.height);
-          faceapi.detectAllFaces(canvas).then(results => {
+        setInterval( () => {
+          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+          faceapi.detectSingleFace(canvas).withFaceLandmarks().withFaceDescriptor().then( result => {
             // 对检测到的人脸进行处理
             // 在人脸上画框
             ctx.strokeStyle = 'red';
-            for (let i = 0; i < results.length; i++) {
-              const face = results[i];
-              const box = face.box;
+            if(result) {
+              const face = result;
+              const box = face.detection.box;
               ctx.strokeRect(box.x, box.y, box.width, box.height);
               ctx.stroke();
+              // 人脸检验
+              this.checkFace(face).then(async r => {
+                if(r){
+                  const image = await this.cameraShoot(canvas, box, box.width, box.height);
+                  
+                  console.log('签到成功');
+                }else{
+                  console.log('未签到');
+                }
+              })
             }
-            console.log(results.length);
-          });
+          })
         }, 200); // 每隔一定时间检测一次
+      },
+      async cameraShoot(video, startPoint, width, height) {
+        const canvas = document.createElement("canvas");
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext("2d").drawImage(video, startPoint.x, startPoint.y, width, height)
+        return canvas.toDataURL('image/png');
+      },
+      async checkFace(face) {
+        const control = document.createElement("img")
+        control.src = '../../static/faces/rjj.jpg';
+        const controlface = await faceapi.detectSingleFace(control).withFaceLandmarks().withFaceDescriptor();
+        if (face.descriptor) {
+          const faceDistance = faceapi.euclideanDistance(controlface.descriptor, face.descriptor);
+          // console.log(faceDistance);
+          return faceDistance < 0.35;
+        } else {
+          return false;
+        }
       },
       // 返回上一级
 			back(){
