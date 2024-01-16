@@ -29,18 +29,12 @@
 		  <view class="box">
 		  		<view class="line"></view>
 				<view class="content" v-for="(item,index) in classInfo" :key="index">
-					<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toHistory(item.name)">
+					<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toHistory(item.id)">
 										<view class="tn-padding-left-sm" style="width: 100%;">
 										  <view class="tn-flex tn-flex-row-between tn-flex-col-between">
-										    <view class="justify-content-item">
-										      <text class="tn-color-cat tn-text-lg tn-text-bold">{{item.name}}</text>
-										    </view>
 										    <view class="justify-content-item tag">
-										      {{item.id}}
+										      班级:S{{item.id}}
 										    </view>
-										  </view>
-										  <view class=" tn-padding-top-xs  tn-text-ellipsis-2">
-										    <text class="tn-color-gray">{{item.detail}}</text>
 										  </view>
 										  <view class="tn-flex tn-flex-row-between tn-flex-col-between tn-margin-top-sm">
 										    <view class="justify-content-item tn-round tn-text-xs tn-bg-orangered--light tn-color-orangered" style="padding: 5rpx 15rpx;">
@@ -48,7 +42,6 @@
 										    </view>
 										    <view class="justify-content-item tn-color-gray tn-text-center tn-color-gray">
 										      <text class="tn-icon-time tn-padding-right-xs tn-text-df"></text>
-										      <text class="tn-text-sm">{{item.time}}</text>
 										    </view>
 										  </view>
 										</view>
@@ -59,45 +52,59 @@
 </template>
 
 <script>
-	export default {
+	import requestUtil from "@/utils/request";
+
+  export default {
 		data() {
 			return {
+        teacherID: localStorage.getItem("teacher"),
 				// 向考勤历史传递的参数
+        sub_id: '',
 				name:{
 					sub_name:"",
-					class_name:""
+					class_id:""
 				},
-				
 				// 这里存放班级信息 从后端传过来
-				classInfo:[{
-					id: 1,
-					name:'软件工程211',
-					detail:'班级详情',
-					time:'创建时间'
-				},{
-					id: 2,
-					name:'软件工程212',
-					detail:'班级详情',
-					time:'创建时间'
-				}] 
+				classInfo:[]
 			}
 		},
 		
 		onLoad(options) {
-			this.name.sub_name = decodeURIComponent(options.sub_name);
+			this.sub_id = decodeURIComponent(options.sub_id);
+      this.initClass();
+      this.initSubName();
 		},
 		
 		methods: {
+      async initSubName(){
+        const res = await requestUtil.get("course/"+this.sub_id,{id:this.sub_id});
+        if (res.data.code === '200') {
+          this.name.sub_name = res.data.data.name;
+        }
+      },
+      async initClass (){
+        const res = await requestUtil.get("teacherrole/page",{pageNum:1,pageSize:10})
+        if (res.data.code === '200') {
+          for (const item of Array.from(res.data.data.records)) {
+            const resclass = await requestUtil.get("class/"+item.clid,{id:item.clid})
+            if (resclass.data.code === '200') {
+              this.classInfo.push({
+                id: resclass.data.data.id
+              });
+            }
+          }
+        }
+      },
 			// 返回上一级
 			back(){
 				uni.navigateBack({
-					delta: 0
+					delta: 1
 				})
 			},
 			
 			// 去考勤历史页面
-			toHistory(class_name){
-				this.name.class_name = class_name
+			toHistory(class_id){
+				this.name.class_id = class_id
 				// console.log(this.name)
 				uni.navigateTo({
 					url:'/pages/history/history?name='+encodeURIComponent(JSON.stringify(this.name)),

@@ -4,6 +4,17 @@
   },
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		  "path": "pages/login/login",
+		  "style": {
+		    "mp-weixin": {
+		      "disableScroll": true
+		    },
+		    "app-plus": {
+		      "titleNView":false  //去掉app+h5顶部导航
+		    }
+		  }
+		},
+		{
 		  "path": "pages/home/home",
 		  "style": {
 		    "mp-weixin": {

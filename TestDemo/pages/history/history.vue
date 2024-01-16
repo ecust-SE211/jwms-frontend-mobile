@@ -21,7 +21,7 @@
 					  <view class="top" style="margin-bottom: 5rpx;">
 					  	<text style="background-color: antiquewhite;">{{name.sub_name}}</text>
 					  </view>
-					<text style="background-color: antiquewhite; margin-left: 2rpx;margin-right: 5rpx;">{{name.class_name}}</text>
+					<text style="background-color: antiquewhite; margin-left: 2rpx;margin-right: 5rpx;">S{{name.class_id}}班</text>
 				  考勤记录如下：</text>
 			    </view>
 			  </view>
@@ -33,18 +33,14 @@
 		  		<view class="line"></view>
 				
 				<view class="content" v-for="(item,index) in history" :key="index">
-					<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toStudent()">
+					<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toStudent(item.id)">
 										<view class="tn-padding-left-sm" style="width: 100%;">
 										  <view class="tn-flex tn-flex-row-between tn-flex-col-between">
-										    <view class="justify-content-item">
-										      <text class="tn-color-cat tn-text-lg tn-text-bold">{{item.name}}</text>
-										    </view>
 										    <view class="justify-content-item tag">
-										      {{item.id}}
+										      考勤记录{{item.id}}
 										    </view>
 										  </view>
 										  <view class=" tn-padding-top-xs  tn-text-ellipsis-2">
-										    <text class="tn-color-gray">{{item.detail}}</text>
 										  </view>
 										  <view class="tn-flex tn-flex-row-between tn-flex-col-between tn-margin-top-sm">
 										    <view class="justify-content-item tn-round tn-text-xs tn-bg-orangered--light tn-color-orangered" style="padding: 5rpx 15rpx;">
@@ -52,54 +48,57 @@
 										    </view>
 										    <view class="justify-content-item tn-color-gray tn-text-center tn-color-gray">
 										      <text class="tn-icon-time tn-padding-right-xs tn-text-df"></text>
-										      <text class="tn-text-sm">{{item.time}}</text>
+										      <text class="tn-text-sm">{{item.date}}</text>
 										    </view>
 										  </view>
 										</view>
 					</view>
 				</view>
 		  </view>
-		  
+      <button style="position: fixed;bottom: 0;right: 0;width: 100%;height: 10%;color:#FFFFFF;font-size: larger;background: #00C3FF" @click="issueAttendance">发布考勤</button>
 	</view>
 </template>
 
 <script>
-	export default {
+	import * as requestUtil from "@/utils/request";
+  export default {
 		data() {
 			return {
 				name:{
 					// 最好从后端传过来
-					class_name:""	,// 班级名称
+					class_id:""	,// 班级名称
 					sub_name:""   // 课程名称
 				},
 				// 历史考勤记录需要从后端传过来
-				history:[
-					{
-						id: 1,
-						name: "考勤记录",
-						detail:"考勤详情",
-						time: "创建时间"
-					},{
-						id: 2,
-						name: "考勤记录",
-						detail:"考勤详情",
-						time: "创建时间"
-					},{
-						id: 3,
-						name: "考勤记录",
-						detail:"考勤详情",
-						time: "创建时间"
-					}
-				]
+				history:[]
 			};
 		},
 		
 		onLoad(options) {
 			this.name = JSON.parse(decodeURIComponent(options.name));
-		    // console.log(this.name);
+		  this.initHistory();
 		},
 		
 		methods:{
+      async issueAttendance(){
+        const res = await requestUtil.post("attendance",{
+          id:'',
+          clid:this.name.class_id,
+          date: ''
+        });
+        if (res.data.code === '200') {
+          alert("发布考勤成功");
+          // 刷新页面
+          window.location.reload();
+        }
+      },
+      async initHistory(){
+        const res = await requestUtil.get("attendance/findAttendance",{clid:this.name.class_id});
+        // console.log(res);
+        if (res.data.code === '200') {
+          this.history = res.data.data.records;
+        }
+      },
 			// 返回上一级
 			back(){
 				uni.navigateBack({
@@ -108,9 +107,9 @@
 			},
 			
 			// 去学生页面
-			toStudent(){
+			toStudent(fid){
 				uni.navigateTo({
-					url:'/pages/student/student'
+					url:'/pages/student/student?fid='+encodeURIComponent(JSON.stringify({fid: fid, clid: this.name.class_id}))
 				})
 			}
 		}

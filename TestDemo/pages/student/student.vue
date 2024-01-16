@@ -18,7 +18,7 @@
 			  <view class="tn-flex tn-flex-row-between tn-flex-col-between">
 			    <view class="justify-content-item">
 			      <text class="tn-color-cat tn-text-lg tn-text-bold">
-				  签到学生如下：</text>
+				  考勤{{fid}}签到学生如下：</text>
 			    </view>
 			  </view>
 			</view>
@@ -28,14 +28,22 @@
 		  <view class="box">
 		  		<view class="line"></view>
 				<view class="about-shadow tn-margin-top-lg tn-padding-top-sm tn-padding-bottom-sm">
-				  <view class="student" v-for="(item,index) in students" :key="index">
+				  <view class="student" v-for="(item,index) in attend_students" :key="index">
 				  	<tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
 				  	  <view class="tn-flex tn-flex-col-center">
 				  	    <text style="flex: 1;">{{item.name}}</text>
-						<text style="flex: 2;">{{item.status}}</text>
+						    <text style="flex: 2;">已签到</text>
 				  	  </view>
 				  	</tn-list-cell>
 				  </view>
+          <view class="student" v-for="(item,index) in unattend_students" :key="index">
+            <tn-list-cell :hover="true" :unlined="true" :radius="true" :fontSize="30">
+              <view class="tn-flex tn-flex-col-center">
+                <text style="flex: 1;">{{item.name}}</text>
+                <text style="flex: 2;">未签到</text>
+              </view>
+            </tn-list-cell>
+          </view>
 				</view>
 		  </view>
     <view>
@@ -46,25 +54,26 @@
 </template>
 
 <script>
+  import * as requestUtil from "@/utils/request";
+
   export default {
 		data() {
 			return {
-				name:{
-					class_name:"", // 班级名称
-				},
-				students:[{
-					name:'高心雨',
-					status:'已签'
-				},{
-					name:'秦阳',
-					status:'已签'
-				},{
-					name:'123',
-					status:'未签'
-				}],// 学生姓名 从后端获取
+        fid:'',
+        class_id:'',
+        students:[],// 学生姓名 从后端获取
+        attend_students:[],
+        unattend_students:[],
         faceApiLoaded: false
 			};
 		},
+    onLoad(options) {
+      this.fid = JSON.parse(decodeURIComponent(options.fid)).fid;
+      this.class_id =JSON.parse(decodeURIComponent(options.fid)).clid;
+      this.initStudent().then(e=> {
+        this.initAttendance();
+      });
+    },
     mounted() {
       const faceapiminScript = document.createElement('script');
       faceapiminScript.src = '/static/js/face-api.js';
@@ -111,16 +120,12 @@
             if(result) {
               const face = result;
               const box = face.detection.box;
-              ctx.strokeRect(box.x, box.y, box.width, box.height);
-              ctx.stroke();
+              // ctx.strokeRect(box.x, box.y, box.width, box.height);
+              // ctx.stroke();
               // 人脸检验
               this.checkFace(face).then(async r => {
                 if(r){
                   const image = await this.cameraShoot(canvas, box, box.width, box.height);
-                  
-                  console.log('签到成功');
-                }else{
-                  console.log('未签到');
                 }
               })
             }
@@ -136,26 +141,77 @@
       },
       async checkFace(face) {
         const control = document.createElement("img")
-        control.src = '../../static/faces/rjj.jpg';
-        const controlface = await faceapi.detectSingleFace(control).withFaceLandmarks().withFaceDescriptor();
-        if (face.descriptor) {
-          const faceDistance = faceapi.euclideanDistance(controlface.descriptor, face.descriptor);
-          // console.log(faceDistance);
-          return faceDistance < 0.35;
-        } else {
-          return false;
+        const url='../../static/faces/'
+        for (let student of this.unattend_students){
+          control.src = url + student.id +'.jpg';
+          const controlface = await faceapi.detectSingleFace(control).withFaceLandmarks().withFaceDescriptor();
+          if (face.descriptor) {
+            const faceDistance = faceapi.euclideanDistance(controlface.descriptor, face.descriptor);
+            // console.log(faceDistance);
+            if(faceDistance < 0.45) {
+              try{
+                const res = await requestUtil.post("attendancerecord",{
+                  id:'',
+                  sid:student.id,
+                  fid:this.fid,
+                });
+                if(res.data.code === '200'){
+                  alert("签到成功");
+                  window.location.reload();
+                }
+              }catch (e){}
+              return true;
+            }else {
+              return false;
+            }
+          } else {
+            return false;
+          }
+        }
+      },
+      async initAttendance(){
+        const res = await requestUtil.get("attendancerecord/student",{fid:this.fid});
+        if (res.data.code === '200') {
+          const rec=res.data.data.records;
+          for (let student of this.students) {
+            this.find(rec, student.id).then(r=> {
+              if(r){
+                this.attend_students.push({
+                  id: student.id,
+                  name: student.name
+                })
+              } else{
+                this.unattend_students.push({
+                  id: student.id,
+                  name: student.name
+                })
+              }
+            })
+          }
+        }
+      },
+      async find(rec,id){
+        for (let item of rec){
+          if(item.sid === id) {
+            return true;
+          }
+        }
+        return false;
+      },
+      async initStudent() {
+        const res = await requestUtil.get("classstudent/student",{clid:this.class_id});
+        if (res.data.code === '200') {
+          this.students = res.data.data;
         }
       },
       // 返回上一级
 			back(){
-				// uni.navigateTo({
-				// 	url:'/pages/class/class',
-				// });
 				uni.navigateBack({
 					delta: 1
 				})
 			},
-		}
+		},
+
   }
 </script>
 

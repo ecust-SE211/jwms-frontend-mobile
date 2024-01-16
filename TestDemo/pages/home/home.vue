@@ -31,9 +31,9 @@
     </swiper>
 	
     <view class="indication">
-        <block v-for="(item,index) in swiperList" :key="index">
-            <view class="spot" :class="cardCur==index?'active':''"></view>
-        </block>
+<!--        <block v-for="(item,index) in swiperList" :key="index">-->
+<!--            <view class="spot" :class="cardCur==index?'active':''"></view>-->
+<!--        </block>-->
     </view>
     
     <view class="tn-padding-bottom-lg">
@@ -47,7 +47,7 @@
 		<view class="tn-padding-left-sm" style="width: 100%;">
 		  <view class="tn-flex tn-flex-row-between tn-flex-col-between">
 		    <view class="justify-content-item">
-		      <text class="tn-color-cat tn-text-lg tn-text-bold">{{content[0].name}}老师，您的课程如下：</text>
+		      <text class="tn-color-cat tn-text-lg tn-text-bold">{{teacherName}}老师，您的课程如下：</text>
 		    </view>
 		  </view>
 		</view>
@@ -55,19 +55,13 @@
 	
 	<view class="box">
 			<view class="line"></view>
-			 <view class="content" v-for="(item,index) in content[0].subjects" :key="index">
-			 	<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toClass(item.n)">
+			 <view class="content" v-for="(item,index) in subjects" :key="index">
+			 	<view class="tn-flex tn-flex-col-top tn-margin tn-cat-shadow tn-padding" style="background-color: #fafafa;" @click="toClass(item.id)">
 			 						<view class="tn-padding-left-sm" style="width: 100%;">
 			 						  <view class="tn-flex tn-flex-row-between tn-flex-col-between">
 			 						    <view class="justify-content-item">
 			 						      <text class="tn-color-cat tn-text-lg tn-text-bold">{{item.n}}</text>
 			 						    </view>
-			 						    <view class="justify-content-item tag">
-			 						      {{item.id}}
-			 						    </view>
-			 						  </view>
-			 						  <view class=" tn-padding-top-xs  tn-text-ellipsis-2">
-			 						    <text class="tn-color-gray">{{item.detail}}</text>
 			 						  </view>
 			 						  <view class="tn-flex tn-flex-row-between tn-flex-col-between tn-margin-top-sm">
 			 						    <view class="justify-content-item tn-round tn-text-xs tn-bg-orangered--light tn-color-orangered" style="padding: 5rpx 15rpx;">
@@ -75,7 +69,6 @@
 			 						    </view>
 			 						    <view class="justify-content-item tn-color-gray tn-text-center tn-color-gray">
 			 						      <text class="tn-icon-time tn-padding-right-xs tn-text-df"></text>
-			 						      <text class="tn-text-sm">{{item.time}}</text>
 			 						    </view>
 			 						  </view>
 			 						</view>
@@ -90,10 +83,12 @@
 </template>
 
 <script>
+  import requestUtil, {getServerUrl} from "../../utils/request.js";
   export default {
     name: 'Index',
     data(){
       return {
+        teacherID: localStorage.getItem("teacher"),
         isAndroid: true,
 		// 轮播器的图片
         swiperList: [{
@@ -112,41 +107,50 @@
           id: 5,
           url: require('../../static/ecust5.jpg'),
         }],
-		
+        teacherName:'',
 		// 下面是课程查看 应该是从数据库传来的东西 赋值在下面
-        content: [
-         {
-			 name:"XX",
-			 subjects:[{
-				 id: 1,
-				 n:'数据库原理与设计',
-				 detail:'课程详情',
-				 time:'创建时间'
-			 },{
-				 id: 2,
-				 n:'软件文档写作',
-				 detail:'课程详情',
-				 time:'创建时间'
-			 }]
-		 }
-        ]
+         subjects:[]
       }
     },
-    created() {
-      const systemInfo = uni.getSystemInfoSync()
-      if (systemInfo.system.toLocaleLowerCase().includes('ios')) {
-        this.isAndroid = false
-      } else {
-        this.isAndroid = true
-      }
+    onLoad() {
+      this.initTeacherName();
+      this.initCourse();
     },
+    mounted() {
+    },
+    // created() {
+    //   const systemInfo = uni.getSystemInfoSync()
+    //   if (systemInfo.system.toLocaleLowerCase().includes('ios')) {
+    //     this.isAndroid = false
+    //   } else {
+    //     this.isAndroid = true
+    //   }
+    // },
     methods: {
-
+      async initTeacherName(){
+        const res = await requestUtil.get("teacher/"+this.teacherID.toString(),{id:this.teacherID})
+        if (res.data.code === '200'){
+          this.teacherName = res.data.data.name;
+        }
+      },
+      async initCourse (){
+        const res = await requestUtil.get("teacherrole/course",{tid:this.teacherID})
+        if (res.data.code === '200') {
+          console.log(res)
+          Array.from(res.data.data).forEach(item => {
+            console.log(item)
+              this.subjects.push({
+                id: item.id,
+                n: item.name
+              })
+          })
+        }
+      },
       // 跳转class页面
-      toClass(sub_name) {	
-		// console.log(sub_name)
+      toClass(sub_id) {
+		// console.log(sub_id)
       	uni.navigateTo({
-      		url: "/pages/class/class?sub_name=" +  encodeURIComponent(sub_name),
+      		url: "/pages/class/class?sub_id=" +  encodeURIComponent(sub_id),
       	});
       },
 	  

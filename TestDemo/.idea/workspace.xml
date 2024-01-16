@@ -5,13 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e7dbd21-2d66-4639-8f3a-496de1a1c6bf" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/login/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/faces/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/faces/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/faces/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/faces/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/haarcascade_frontalface_default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/class/class.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/class/class.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/haarcascade_frontalface_default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/history/history.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/history/history.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/student.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/student.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faces/rjj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/faces/1.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,34 +48,45 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2avfP7d3px4pFCIt9Z6d6Frpbfi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.2.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/ECUST/软件文档写作/实验/JWMS/jwms-frontend-mobile/TestDemo/static/faces&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\IntelliJ IDEA 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "21.2.0",
+    "javascript.nodejs.core.library.typings.version": "20.11.0",
+    "last_opened_file_path": "E:/ECUST/软件文档写作/实验/JWMS/jwms-frontend-mobile/TestDemo/static/faces",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static\faces" />
+      <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\utils" />
       <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static\models" />
       <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\static\js" />
       <recent name="E:\ECUST\软件文档写作\实验\JWMS\jwms-frontend-mobile\TestDemo\pages\student" />
@@ -73,11 +108,15 @@
       <workItem from="1705204758041" duration="12481000" />
       <workItem from="1705221959759" duration="10019000" />
       <workItem from="1705239124880" duration="1476000" />
-      <workItem from="1705279060630" duration="1832000" />
+      <workItem from="1705279060630" duration="7636000" />
+      <workItem from="1705296641780" duration="23600000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
