@@ -89,4 +89,35 @@
   /* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
   @import './tuniao-ui/index.scss';
   @import './tuniao-ui/iconfont.css';
+  /* 自定义导航栏 */
+  .status_title {
+  	box-sizing: border-box;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	width: 100%;
+  	height: 44px;
+  	padding: 16px;
+  	background-color: #fafafa;
+  	border-bottom: 1px solid #d0d0d7;
+  	.status_left {
+  		width: 18px;
+  	}
+  
+  	.status_center {
+  		font-size: 17px;
+  		font-weight: 700;
+  	}
+  }
+  .box{
+	  display: flex;
+	  flex-direction: column;
+  }
+  .content {
+  	display: block;
+  	border-radius: 0.25rem;
+  	box-shadow: 0 0 1rem #d0d0d7;
+  	margin-top: 1rem;
+  	font-size: 1rem;
+  }
 </style>
