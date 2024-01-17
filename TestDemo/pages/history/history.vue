@@ -89,9 +89,10 @@
 			},
 			// 返回上一级
 			back() {
-				uni.navigateBack({
-					delta: 1
-				})
+				window.history.back()
+				// uni.navigateBack({
+				// 	delta: 1
+				// })
 			},
 
 			// 去学生页面
