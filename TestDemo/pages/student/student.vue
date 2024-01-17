@@ -55,6 +55,7 @@
 
 <script>
   import * as requestUtil from "@/utils/request";
+  import axios from "axios";
 
   export default {
 		data() {
@@ -119,27 +120,26 @@
             ctx.strokeStyle = 'red';
             if(result) {
               const face = result;
-              const box = face.detection.box;
+              // const box = face.detection.box;
               // ctx.strokeRect(box.x, box.y, box.width, box.height);
               // ctx.stroke();
               // 人脸检验
-              this.checkFace(face).then(async r => {
+              this.checkFace(face,canvas).then(async r => {
                 if(r){
-                  const image = await this.cameraShoot(canvas, box, box.width, box.height);
                 }
               })
             }
           })
         }, 200); // 每隔一定时间检测一次
       },
-      async cameraShoot(video, startPoint, width, height) {
+      cameraShoot(video, startPoint, width, height) {
         const canvas = document.createElement("canvas");
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        canvas.getContext("2d").drawImage(video, startPoint.x, startPoint.y, width, height)
-        return canvas.toDataURL('image/png');
+        canvas.width = video.width;
+        canvas.height = video.height;
+        canvas.getContext("2d").drawImage(video, startPoint.x, startPoint.y, width, height,0,0, canvas.width, canvas.height)
+        return canvas;
       },
-      async checkFace(face) {
+      async checkFace(face,canvas) {
         const control = document.createElement("img")
         const url='../../static/faces/'
         for (let student of this.unattend_students){
@@ -148,17 +148,41 @@
           if (face.descriptor) {
             const faceDistance = faceapi.euclideanDistance(controlface.descriptor, face.descriptor);
             // console.log(faceDistance);
-            if(faceDistance < 0.45) {
+            if(faceDistance < 0.4) {
               try{
-                const res = await requestUtil.post("attendancerecord",{
-                  id:'',
-                  sid:student.id,
-                  fid:this.fid,
-                });
-                if(res.data.code === '200'){
-                  alert("签到成功");
-                  window.location.reload();
-                }
+                const box=face.detection.box;
+                this.cameraShoot(canvas, box, box.width, box.height).toBlob((blob)=>{
+                  // 将image转化成file文件
+                  const formData = new FormData();
+                  // 将文件添加到FormData对象中
+                  formData.append('studentId', student.id);
+                  formData.append('file', blob, 'image.png');
+                  axios.post("http://localhost:8088/student/compare",formData,
+                  {
+                    headers: {
+                      'Content-Type': 'multipart/form-data'
+                    }
+                  }).then(async res => {
+                    if (res.data.code === '200') {
+                      console.log(res.data.data);
+                      if (res.data.data) {
+                        try {
+                          const res2 = await requestUtil.post("attendancerecord", {
+                            id: '',
+                            sid: student.id,
+                            fid: this.fid,
+                          });
+                          console.log(res2.data);
+                          if (res2.data.code === '200') {
+                            alert(student.name + "签到成功");
+                            window.location.reload();
+                          }
+                        } catch (e) {
+                        }
+                      }
+                    }
+                  });
+                })
               }catch (e){}
               return true;
             }else {

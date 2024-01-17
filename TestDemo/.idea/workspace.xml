@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e7dbd21-2d66-4639-8f3a-496de1a1c6bf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/login/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/faces/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/faces/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/faces/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/faces/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/haarcascade_frontalface_default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/class/class.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/class/class.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/haarcascade_frontalface_default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/history/history.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/history/history.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/student/student.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/student/student.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/faces/rjj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/faces/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faces/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/faces/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faces/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/faces/5.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +50,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "21.2.0",
     "javascript.nodejs.core.library.typings.version": "20.11.0",
-    "last_opened_file_path": "E:/ECUST/软件文档写作/实验/JWMS/jwms-frontend-mobile/TestDemo/static/faces",
+    "last_opened_file_path": "E:/ECUST/SWDW/test/JWMS/jwms-frontend-mobile/TestDemo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,6 +95,14 @@
       <workItem from="1705239124880" duration="1476000" />
       <workItem from="1705279060630" duration="7636000" />
       <workItem from="1705296641780" duration="23600000" />
+      <workItem from="1705365915365" duration="909000" />
+      <workItem from="1705384397944" duration="195000" />
+      <workItem from="1705392163951" duration="20000" />
+      <workItem from="1705399343226" duration="978000" />
+      <workItem from="1705401214524" duration="4492000" />
+      <workItem from="1705472042962" duration="2750000" />
+      <workItem from="1705474883054" duration="173000" />
+      <workItem from="1705475484732" duration="4368000" />
     </task>
     <servers />
   </component>
