@@ -115,9 +115,7 @@
 							this.processing = true
 							const face = result;
 							if(this.student!== null ){
-								if(this.checkFace(face,canvas)){
-									this.student=null;
-								}
+								this.checkFace(face,canvas)
 							}
 							// const box = face.detection.box;
 							// ctx.strokeRect(box.x, box.y, box.width, box.height);
@@ -258,9 +256,8 @@
 										if (res2.data.code === '200') {
 											alert(this.student.name + "签到成功");
 											this.initAttendance()
-											return true;
+											this.student=null
 										}
-										else return false;
 									} catch (e) {}
 								}
 							}

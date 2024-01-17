@@ -74,26 +74,34 @@
 			async initClass() {
 				const res = await requestUtil.get("teacherrole/page", {
 					pageNum: 1,
-					pageSize: 10
+					pageSize: 100
 				})
 				if (res.data.code === '200') {
 					for (const item of Array.from(res.data.data.records)) {
+						if(item.tid.toString() !== this.teacherID.toString()){
+							continue
+						}
 						const resclass = await requestUtil.get("class/" + item.clid, {
 							id: item.clid
 						})
 						if (resclass.data.code === '200') {
-							this.classInfo.push({
-								id: resclass.data.data.id
-							});
+							if (resclass.data.data.cid.toString() === this.sub_id.toString()) {
+								console.log(resclass.data.data)
+								this.classInfo.push({
+									id: resclass.data.data.id
+								});
+							}
+
 						}
 					}
 				}
 			},
 			// 返回上一级
 			back() {
-				uni.navigateBack({
-					delta: 1
-				})
+				window.history.back()
+				// uni.navigateBack({
+				// 	delta: 1
+				// })
 			},
 
 			// 去考勤历史页面

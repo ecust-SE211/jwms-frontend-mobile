@@ -42,6 +42,7 @@
               url: "/pages/home/home"
             })
           }else {
+			alert('登录失败')
             console.log('登录失败')
           }
         });

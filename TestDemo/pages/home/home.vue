@@ -7,7 +7,7 @@
 				<view style="width: 100%;padding: 0 15px;">
 					<view style="float: left;font-weight: bold;">系统首页</view>
 					<view style="float: right;">
-						<view class="tn-icon-menu" style="font-size: 50rpx;" @click="toMe"></view>
+						<view  style="font-size: 25rpx;" @click="logout">登出</view>
 					</view>
 				</view>
 			</tn-nav-bar>
@@ -143,7 +143,11 @@
 					url: "/pages/class/class?sub_id=" + encodeURIComponent(sub_id),
 				});
 			},
-
+			logout(){
+				uni.navigateTo({
+					url:"/pages/login/login"
+				})
+			},
 			// 跳转个人中心页面
 			toMe() {
 				uni.reLaunch({

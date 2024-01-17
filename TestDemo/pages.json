@@ -36,23 +36,23 @@
 				"titleNView":false  //去掉app+h5顶部导航
 			}
 		},
+		
 		{
-			"path" : "pages/student/student",
+			"path" : "pages/history/history",
 			"style" : 
 			{
-				"navigationBarTitleText" : "班级学生信息",
+				"navigationBarTitleText" : "考勤历史",
 				"enablePullDownRefresh" : false
 			},
 			"app-plus":
 			{
 				"titleNView":false  //去掉app+h5顶部导航
 			}
-		},
-		{
-			"path" : "pages/history/history",
+		},{
+			"path" : "pages/student/student",
 			"style" : 
 			{
-				"navigationBarTitleText" : "考勤历史",
+				"navigationBarTitleText" : "班级学生信息",
 				"enablePullDownRefresh" : false
 			},
 			"app-plus":
